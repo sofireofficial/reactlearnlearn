@@ -1,4 +1,5 @@
-import React from 'react' 
+import React, {useState} from 'react' 
+import CodePic from "./images/CodePic.png";
 import AlertButton from "./Components/AlertButton";
 
 import ToDoButton from "./Components/ToDoButton";
@@ -10,19 +11,19 @@ import CompletedModal from './Components/CompleteModal';
 import Links from './Components/Links';
 import Socials from './Components/Socials'
 
-// import ActionsContent from "./Components/ActionsModal";
-
 const App = () => {
+  const [showToDoModal, setShowToDoModal] = useState(false) //showToDoModal = variable & it is false. setShowToDoModal will be used to change the state
   return (
     <div>
       <h1>My Learnings!</h1>
+      <img src={CodePic} alt="person typing on laptop" width="250px" height="220px"></img>
+
       <h5>by Sophia Johnson</h5>
       <AlertButton />
 
-    
       <p>Add functionality to the ToDoButton below</p>
-      <ToDoButton />
-      <ToDoModal />
+      <ToDoButton handleClick={setShowToDoModal}/> {/*handleClick is the new variable. it is a prop. We'll be able to access its value. WHich in this case is a js function */}
+        {showToDoModal ? <ToDoModal /> : null}  {/*check showToDoModal... when true, show modal.*/}
 
       <p>Add functionality to the CompletedButton below</p>
       <CompletedButton />

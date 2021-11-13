@@ -12,9 +12,9 @@ const makeBlackAndRed = {
   fontWeight: 'bold',
 };
 
-const ToDoButton = () => {
+const ToDoButton = (props) => {
   return <div>
-    <button style={makeBlackAndRed}>Things to discuss with Mentors!!!</button>
+    <button style={makeBlackAndRed} onClick={ () => {props.handleClick(true)}}>Things to discuss with Mentors!!!</button>
   </div>
 };
 
