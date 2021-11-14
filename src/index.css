@@ -1,5 +1,6 @@
 #root {
   background-color: grey;
+  text-align: center;
 }
 
 p {
@@ -11,6 +12,9 @@ p {
     background-color: yellow;
 }
 
-#root {
-  text-align: center;
+ul {
+  list-style-type: none;
 }
+
+
+
