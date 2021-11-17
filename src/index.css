@@ -4,17 +4,27 @@
 }
 
 p {
-  color: red;
+  color: brown;
 }
-
 
 .yellowModal {
     background-color: yellow;
+    padding: 30px;
 }
 
 ul {
   list-style-type: none;
 }
 
-
+.mainButtons {
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  padding: 2em;
+  border: 0;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+}
 

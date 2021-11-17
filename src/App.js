@@ -13,6 +13,7 @@ import Socials from './Components/Socials'
 
 const App = () => {
   const [showToDoModal, setShowToDoModal] = useState(false) //showToDoModal = variable & it is false. setShowToDoModal will be used to change the state
+  const [showCompletedModal, setShowCompletedModal] = useState(false) 
   return (
     <div>
       <h1>My Learnings!</h1>
@@ -26,8 +27,8 @@ const App = () => {
         {showToDoModal ? <ToDoModal /> : null}  {/*check showToDoModal... when true, show modal.*/}
 
       <p>Add functionality to the CompletedButton below</p>
-      <CompletedButton />
-      <CompletedModal />
+      <CompletedButton handleClick={setShowCompletedModal}/>
+        {showCompletedModal ? <CompletedModal /> :null}
 
       <h5>Links</h5>
       <Links />

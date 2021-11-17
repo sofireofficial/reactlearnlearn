@@ -7,7 +7,7 @@ function dare() {
 const AlertButton = () => {
     return (
         <div>
-        <button onClick={dare}>Click me if you dare!</button>
+        <button className="mainButtons" onClick={dare}>Click me if you dare!</button>
         </div>)
 }
 
