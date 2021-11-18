@@ -1,4 +1,4 @@
-const ToDoButton = (props) => {
+const CompletedButton = (props) => {
     return (
         <div>
             <button className="mainButtons" onClick={ () => {props.handleClick(true)}}>Completed actions</button>
@@ -6,4 +6,4 @@ const ToDoButton = (props) => {
     )
 }
 
-export default ToDoButton
+export default CompletedButton

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ToDoModal = () => {
+const ToDoModal = (props) => {
   return (
   <div className="yellowModal">
   <ul>
@@ -8,6 +8,7 @@ const ToDoModal = () => {
     <li>I want to learn B</li>
     <li>I want to learn C</li>
   </ul>
+  <button onClick={ () => {props.handleClick(false)}}>X</button>
   </div>
 )
 };

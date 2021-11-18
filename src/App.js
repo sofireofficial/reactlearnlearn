@@ -24,7 +24,7 @@ const App = () => {
 
       <p>Add functionality to the ToDoButton below</p>
       <ToDoButton handleClick={setShowToDoModal}/> {/*handleClick is the new variable. it is a prop. We'll be able to access its value. WHich in this case is a js function */}
-        {showToDoModal ? <ToDoModal /> : null}  {/*check showToDoModal... when true, show modal.*/}
+        {showToDoModal ? <ToDoModal handleClick={setShowToDoModal}/> : null}  {/*check showToDoModal... when true, show modal.*/}
 
       <p>Add functionality to the CompletedButton below</p>
       <CompletedButton handleClick={setShowCompletedModal}/>
