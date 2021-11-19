@@ -6,7 +6,7 @@ import ToDoButton from "./Components/ToDoButton";
 import ToDoModal from './Components/ToDoModal';
 
 import CompletedButton from "./Components/CompletedButton";
-import CompletedModal from './Components/CompleteModal';
+import CompletedModal from './Components/CompletedModal';
 
 import Links from './Components/Links';
 import Socials from './Components/Socials'
@@ -28,7 +28,7 @@ const App = () => {
 
       <p>Add functionality to the CompletedButton below</p>
       <CompletedButton handleClick={setShowCompletedModal}/>
-        {showCompletedModal ? <CompletedModal /> :null}
+        {showCompletedModal ? <CompletedModal handleClick={setShowCompletedModal}/> :null}
 
       <h5>Links</h5>
       <Links />

@@ -1,9 +1,10 @@
 import React from 'react'
 
-const CompletedModal = () => {
+const CompletedModal = (props) => {
   return (
   <div className="yellowModal">
-  <ul>
+    <button className="xButton" onClick={ () => {props.handleClick(false)} }>X</button>
+<ul>
     <li>I learnt A</li>
     <li>I learnt B</li>
     <li>I learnt C</li>

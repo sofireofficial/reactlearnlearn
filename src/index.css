@@ -1,4 +1,4 @@
-#root {
+body {
   background-color: grey;
   text-align: center;
 }
@@ -10,10 +10,19 @@ p {
 .yellowModal {
     background-color: yellow;
     padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 ul {
   list-style-type: none;
+  padding: 0; /*centres li items*/
+}
+
+.xButton {
+  background-color: black;
+  color: white;
+  margin-top: 1px;
 }
 
 .mainButtons {
