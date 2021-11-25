@@ -8,6 +8,9 @@ const CompletedModal = (props) => {
     <li>I learnt A</li>
     <li>I learnt B</li>
     <li>I learnt C</li>
+    <li>I learnt D</li>
+    <li>I learnt E</li>
+    <li>I learnt F</li>
   </ul>
   </div>
 )

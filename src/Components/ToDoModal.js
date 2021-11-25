@@ -8,6 +8,9 @@ const ToDoModal = (props) => {
     <li>I want to learn A</li>
     <li>I want to learn B</li>
     <li>I want to learn C</li>
+    <li>I want to learn D</li>
+    <li>I want to learn E</li>
+    <li>I want to learn F</li>
   </ul>
   </div>
 )
