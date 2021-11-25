@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
 const CompletedModal = (props) => {
   return (
-  <div className="yellowModal">
-    <button className="xButton" onClick={ () => {props.handleClick(false)} }>X</button>
-<ul>
-    <li>I learnt A</li>
-    <li>I learnt B</li>
-    <li>I learnt C</li>
-    <li>I learnt D</li>
-    <li>I learnt E</li>
-    <li>I learnt F</li>
-  </ul>
-  </div>
-)
+    <div className="yellowModal">
+      <button
+        className="xButton"
+        onClick={() => {
+          props.handleClick(false);
+        }}
+      >
+        X
+      </button>
+      <ul>{props.completedList.map( (task, index) => <li>{task}</li>)}</ul>                                    {/*wrapped in curly ensuring it is js. Returns a list item for every item in my array }*/}
+    </div>
+  );
 };
 
-export default CompletedModal
+export default CompletedModal;

@@ -1,14 +1,17 @@
-import React from "react"
+import React from "react";
 
 function dare() {
-    alert('OMG! You clicked me! Nothing to see here');
+  alert("OMG! You clicked me! Nothing to see here");
 }
 
 const AlertButton = () => {
-    return (
-        <div>
-        <button className="mainButtons" onClick={dare}>Click me if you dare!</button>
-        </div>)
-}
+  return (
+    <div>
+      <button className="mainButtons" onClick={dare}>
+        Click me if you dare!
+      </button>
+    </div>
+  );
+};
 
-export default AlertButton
+export default AlertButton;

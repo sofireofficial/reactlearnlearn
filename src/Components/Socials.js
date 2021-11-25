@@ -1,18 +1,16 @@
-import React from "react"
+import React from "react";
 
 const Socials = () => {
-return (
-<div>
+  return (
+    <div>
+      <ul>
+        <li>Github</li>
+        <li>Twitter</li>
+        <li>Insta</li>
+        <li>Facebook</li>
+      </ul>
+    </div>
+  );
+};
 
-<ul>
-<li>Github</li>
-<li>Twitter</li>
-<li>Insta</li>
-<li>Facebook</li>
-</ul>
-
-</div>
-)
-}
-
-export default Socials
+export default Socials;
