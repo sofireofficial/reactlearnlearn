@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react"; // and useEffect
 import CodePic from "./images/CodePic.png";
 import AlertButton from "./Components/AlertButton";
 
