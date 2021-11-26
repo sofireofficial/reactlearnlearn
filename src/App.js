@@ -32,7 +32,9 @@ const App = () => {
         alt="person typing on laptop" width="250px" height="220px"
       ></img>
       <h5>by Sophia Johnson</h5>
-      <AlertButton />
+      <AlertButton label={'Click Me if you dare!'}/>
+      <AlertButton label={'Dare you click me!'}/>
+      
       <p>Add functionality to the ToDoButton below</p>
       <ToDoButton handleClick={setShowToDoModal} />{" "}
       {/*handleClick is the new variable. it is a prop. We'll be able to access its value. WHich in this case is a js function */}
