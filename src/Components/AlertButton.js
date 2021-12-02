@@ -10,7 +10,7 @@ const AlertButton = (props) => {
     <div>
       <p>{props.number}</p>
       <button style={{color:props.color}} className="mainButtons" onClick={dare}>
-        {/* {props.label} */}Hello!
+        {/* {props.label} */}Do Not Click!
       </button>
     </div>
   );
