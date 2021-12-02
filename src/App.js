@@ -32,8 +32,8 @@ const App = () => {
         alt="person typing on laptop" width="250px" height="220px"
       ></img>
       <h5>by Sophia Johnson</h5>
-      <AlertButton label={'Click Me if you dare!'}/>
-      <AlertButton label={'Dare you click me!'}/>
+      <AlertButton label={'Click Me if you dare!'} number={3} color={'pink'}/>
+      <AlertButton label={'Dare you click me!'} number={3} color={'orange'}/>
       
       <p>Add functionality to the ToDoButton below</p>
       <ToDoButton handleClick={setShowToDoModal} />{" "}

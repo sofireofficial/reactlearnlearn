@@ -8,8 +8,9 @@ const AlertButton = (props) => {
   console.log(props)
   return (
     <div>
-      <button className="mainButtons" onClick={dare}>
-        {props.label}
+      <p>{props.number}</p>
+      <button style={{color:props.color}} className="mainButtons" onClick={dare}>
+        {/* {props.label} */}Hello!
       </button>
     </div>
   );

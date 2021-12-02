@@ -3,6 +3,8 @@ import React from "react";
 const ToDoModal = (props) => {
   const handleClick = (index) => {
     props.setCompletedList([...props.completedList, props.toDoList[index]]);
+    props.setToDoList(props.toDoList.filter(listItem => { return listItem !== props.toDoList[index]}));
+    console.log(props.toDoList.filter(listItem => { return listItem !== props.toDoList[index]}));
   };
   console.log(props); ///////////// ANDY!
 
@@ -18,7 +20,7 @@ const ToDoModal = (props) => {
       </button>
       <ul>
         {props.toDoList.map((task, index) => (
-          <li>
+          <li key={"discuss-list-item" + index}> 
             {task}
             <button
               onClick={() => {

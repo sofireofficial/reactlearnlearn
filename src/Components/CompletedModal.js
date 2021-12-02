@@ -11,7 +11,7 @@ const CompletedModal = (props) => {
       >
         X
       </button>
-      <ul>{props.completedList.map( (task, index) => <li>{task}</li>)}</ul>                                    {/*wrapped in curly ensuring it is js. Returns a list item for every item in my array }*/}
+      <ul>{props.completedList.map( (task, index) => <li key={"completed-list-item" + index}>{task}</li>)}</ul>                                    {/*wrapped in curly ensuring it is js. Returns a list item for every item in my array }*/}
     </div>
   );
 };
