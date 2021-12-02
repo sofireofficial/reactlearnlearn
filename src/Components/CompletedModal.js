@@ -2,7 +2,7 @@ import React from "react";
 
 const CompletedModal = (props) => {
   return (
-    <div className="yellowModal">
+    <div className="yellowModalLeft">
       <button
         className="xButton"
         onClick={() => {

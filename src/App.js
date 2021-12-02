@@ -15,12 +15,12 @@ const App = () => {
   const [showToDoModal, setShowToDoModal] = useState(false); //showToDoModal = variable & it is false. setShowToDoModal will be used to change the state
   const [showCompletedModal, setShowCompletedModal] = useState(false);
   const [toDoList, setToDoList] = useState([
-    "I want to learn A",
-    "I want to learn B",
-    "I want to learn C",
-    "I want to learn D",
-    "I want to learn E",
-    "I want to learn F",
+    "Learn ABC",
+    "Learn DEF",
+    "Learn GHI",
+    "Learn JKL",
+    "Learn MNO",
+    "Learn XYZ",
   ]);
   const [completedList, setCompletedList] = useState([]);
   
@@ -29,13 +29,11 @@ const App = () => {
       <h1>My Learnings!</h1>
       <img
         src={CodePic}
-        alt="person typing on laptop" width="250px" height="220px"
+        alt="person typing on laptop" width="350px" height="320px"
       ></img>
-      <h5>by Sophia Johnson</h5>
-      <AlertButton label={'Click Me if you dare!'} number={3} color={'pink'}/>
-      <AlertButton label={'Dare you click me!'} number={3} color={'orange'}/>
-      
-      <p>Add functionality to the ToDoButton below</p>
+      <h2>by Sophia Johnson</h2>
+
+
       <ToDoButton handleClick={setShowToDoModal} />{" "}
       {/*handleClick is the new variable. it is a prop. We'll be able to access its value. WHich in this case is a js function */}
       {showToDoModal ? (
@@ -48,7 +46,8 @@ const App = () => {
         />
       ) : null}{" "}
       {/*first half checks showToDoModal... when true, show modal.*/}
-      <p>Add functionality to the CompletedButton below</p>
+
+
       <CompletedButton handleClick={setShowCompletedModal} />
       {showCompletedModal ? (
         <CompletedModal handleClick={setShowCompletedModal} completedList={completedList} />
@@ -57,6 +56,14 @@ const App = () => {
       <Links />
       <h5>Socials</h5>
       <Socials />
+
+
+      <div className={'flexingDivs'}> 
+      <AlertButton displayText={'1.⛔ Do not click!'} symbol={''} color={'#B00000'}/>
+      <AlertButton displayText={'2.⛔ Do NOT Click!'} symbol={''} color={'#900000'}/>
+      <AlertButton displayText={'3.⛔ DO NOT ClICK!!!'} symbol={''} color={'#700000'}/>
+      </div>
+
     </div>
   );
 };

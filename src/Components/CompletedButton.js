@@ -7,7 +7,7 @@ const CompletedButton = (props) => {
           props.handleClick(true);
         }}
       >
-        Completed actions
+        Completed tasks
       </button>{" "}
       {/* attributes!! */}
     </div>

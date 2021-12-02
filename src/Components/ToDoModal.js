@@ -9,7 +9,7 @@ const ToDoModal = (props) => {
   console.log(props); ///////////// ANDY!
 
   return (
-    <div className="yellowModal">
+    <div className="yellowModalRight">
       <button
         className="xButton"
         onClick={() => {
@@ -27,7 +27,8 @@ const ToDoModal = (props) => {
                 handleClick(index);
               }}
             >
-              {index}
+              ✔
+              {/* alt to tick above = {index} */}
             </button>
           </li>
         ))}

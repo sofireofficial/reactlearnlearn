@@ -1,17 +1,40 @@
 body {
-  background-color: rgba(15, 15, 15, 0.829);
+  position: relative;
+  background-color: rgba(15, 15, 15, 0.904);
+  width: 100%;
   text-align: center;
+  color: white;
 }
 
-p {
+/* p {
   color: brown;
+} */
+
+.yellowModalLeft, .yellowModalRight {
+  position: fixed;
+  background-color: yellow;
+  color: rgba(15, 15, 15, 0.904);  
+  border-radius: 5px;
+  border: 0;
+  padding: 0.5em;  
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 0.8em;
+  line-height: 2em;
+  text-align: center;
+  width: 60%;
+  max-height: 90%;
+  overflow: auto;
 }
 
-.yellowModal {
-  background-color: yellow;
-  padding: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
+.yellowModalLeft {
+  left: 50%;
+  top: 65%;
+}
+
+.yellowModalRight {
+  left: 50%;
+  top: 35%;
 }
 
 ul {
@@ -32,7 +55,11 @@ ul {
   padding: 2em;
   border: 0;
   border-radius: 20px;
-  display: block;
-  margin: auto;
+  margin: 1em;
   font-weight: bold;
+}
+
+.flexingDivs {
+  display: flex;
+  justify-content: center;
 }
