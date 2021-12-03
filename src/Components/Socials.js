@@ -6,8 +6,8 @@ import LogoTwitter from "../images/LogoTwitter.png";
 
 const Socials = () => {
   return (
-    <div id="smBox">
-      <h3>My socials</h3>
+    <div class="linkSmBox">
+      <h3><u>My socials</u></h3>
       <ul>
       <li><a href="https://github.com/sofireofficial" target="blank">
         <img src={LogoGithub} alt="Github logo" 

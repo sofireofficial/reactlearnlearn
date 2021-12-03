@@ -53,6 +53,7 @@ const App = () => {
         <CompletedModal handleClick={setShowCompletedModal} completedList={completedList} />
       ) : null}
       <Links />
+      <br />
       <Socials />
 
 
