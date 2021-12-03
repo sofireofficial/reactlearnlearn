@@ -4,11 +4,13 @@ body {
   width: 100%;
   text-align: center;
   color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-/* p {
-  color: brown;
-} */
+div {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 
 .yellowModalLeft, .yellowModalRight {
   position: fixed;
@@ -62,4 +64,17 @@ ul {
 .flexingDivs {
   display: flex;
   justify-content: center;
+}
+
+img.smLogo {
+  max-width: 1.5em;
+  max-height: 1.5em;
+  color: white;
+}
+
+a {
+    font-size: 0.85em;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
 }

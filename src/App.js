@@ -52,9 +52,7 @@ const App = () => {
       {showCompletedModal ? (
         <CompletedModal handleClick={setShowCompletedModal} completedList={completedList} />
       ) : null}
-      <h5>Links</h5>
       <Links />
-      <h5>Socials</h5>
       <Socials />
 
 
