@@ -1,6 +1,5 @@
 import React, { useState} from "react"; // and useEffect
 import CodePic from "./images/CodePic.png";
-import AlertButton from "./Components/AlertButton";
 
 import ToDoButton from "./Components/ToDoButton";
 import ToDoModal from "./Components/ToDoModal";
@@ -11,16 +10,19 @@ import CompletedModal from "./Components/CompletedModal";
 import Links from "./Components/Links";
 import Socials from "./Components/Socials";
 
+import MoodButton from "./Components/MoodButton";
+import AlertButton from "./Components/AlertButton";
+
 const App = () => {
   const [showToDoModal, setShowToDoModal] = useState(false); //showToDoModal = variable & it is false. setShowToDoModal will be used to change the state
   const [showCompletedModal, setShowCompletedModal] = useState(false);
   const [toDoList, setToDoList] = useState([
-    "Learn ABC",
-    "Learn DEF",
-    "Learn GHI",
-    "Learn JKL",
-    "Learn MNO",
-    "Learn XYZ",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "MongoDB",
   ]);
   const [completedList, setCompletedList] = useState([]);
   
@@ -55,7 +57,8 @@ const App = () => {
       <Links />
       <br />
       <Socials />
-
+      <br />
+      <MoodButton />
 
       <div className={'flexingDivs'}> 
       <AlertButton displayText={'1.⛔ Do not click!'} symbol={''} color={'#B00000'}/>
