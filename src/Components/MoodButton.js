@@ -1,16 +1,12 @@
 import React from "react"
-
-const MoodButton = () => {
-    function emotions() {
-        alert("please work!")
-    // const [showMood, setMood] = useState("...");
-    }
+ 
+const MoodButton = (props) => {
     return (
         <div>
-            <button type="button" className="mainButtons" onClick={() => setMood("🙂")}>Happy?</button>
-            <button type="button" className="mainButtons" onClick={() => setMood("🙁")}>Sad?</button>
+            <button type="button" className="mainButtons" onClick={() => props.setShowMood("🙂")}>Happy?</button>
+            <button type="button" className="mainButtons" onClick={() => props.setShowMood("🙁")}>Sad?</button>
         </div>
     )
 }
-
+ 
 export default MoodButton

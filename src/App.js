@@ -25,6 +25,7 @@ const App = () => {
     "MongoDB",
   ]);
   const [completedList, setCompletedList] = useState([]);
+  const [showMood, setShowMood] = useState("...");
   
   return (
     <div>
@@ -58,7 +59,8 @@ const App = () => {
       <br />
       <Socials />
       <br />
-      <MoodButton />
+      <MoodButton setShowMood={setShowMood}/>
+      <h3>{showMood}</h3>
 
       <div className={'flexingDivs'}> 
       <AlertButton displayText={'1.⛔ Do not click!'} symbol={''} color={'#B00000'}/>
