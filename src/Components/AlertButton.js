@@ -1,7 +1,7 @@
 import React from "react";
 
 function dare() {
-  alert("Aaaaaaaaaaaaaaaaaaaahhhhhhhhhhhh you clicked! You really clicked? You still chose to click the button, after I told you not to! Mmh Mmh Mmh... *Shaking my head*");
+  alert("Aaaaaaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhh you clicked! You really clicked? You still chose to click the button, after I told you not to! Mmh Mmh Mmh... *Shaking my head*");
 }
 
 const AlertButton = (props) => {
